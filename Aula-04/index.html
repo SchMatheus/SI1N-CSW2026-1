@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-04</title>
+</head>
+
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Na frase temos uma <b>parte do texto em negrito</b> usando a tag B (Não semântica)</p>
+    <p>Na frase temos uma <strong>parte do texto em negrito</strong> usando a tag strong (Com semântica)</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase vamos entrar com uma palavra em <i>itálico</i> usando a tag i (Não semântica)</p>
+    <p>Nesta frase vamos entrar com uma palavra em <Em>itálico</Em> usando a tag EM (Com semântica)</p>
+    <h2>Texto Marcador</h2>
+    <p>Aqui vamos usar um texto com destaque <mark style="background-color: green;">de marcador de texto</mark> usando
+        mark</p>
+    <p>Aqui vamos usar um texto com destaque <mark style="background-color: yellow">de marcador de texto</mark> usando
+        mark</p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamaos trabahando aqui com um <big>Texto grande</big> e um <small>texto pequeno</small> </p>
+
+    <h1>Deletado e riscado</h1>
+    <p>Aqui tem um texto <del>deletado</del> e aqui um <strike>riscado</strike></p>
+    <hr>
+    <h1>Texto inserido</h1>
+    <p>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins> na frase de forma semântica</p>
+    <p>Neste frase vamos demonstrar como <u>destacar um texto inserido</u> na frase de forma não semântica</p>
+
+
+<pre>
+<code>
+    import math
+
+# Coeficientes
+a = float(input("Digite o valor de a: "))
+b = float(input("Digite o valor de b: "))
+c = float(input("Digite o valor de c: "))
+
+# Calculando o discriminante (delta)
+delta = b**2 - 4*a*c
+
+if delta > 0:
+    x1 = (-b + math.sqrt(delta)) / (2*a)
+    x2 = (-b - math.sqrt(delta)) / (2*a)
+    print(f"Duas raízes reais: x1 = {x1}, x2 = {x2}")
+elif delta == 0:
+    x = -b / (2*a)
+    print(f"Uma raiz real: x = {x}")
+else:
+    real = -b / (2*a)
+    imag = math.sqrt(-delta) / (2*a)
+    print(f"Raízes complexas: x1 = {real} + {imag}i, x2 = {real} - {imag}i")
+</code>
+</pre>
+
+</body>
+
+</html>
